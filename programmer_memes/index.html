@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="output">
+                <h1>Output</h1>
+                <p>Programmer memes</p>
+                <div id="meme-content"></div>
+                <p>Tell me something funny!</p>
+                <div id="joke-content"></div>
+                <p>Give me some wisdom...</p>
+                <div id="quote-content"></div>
+                <p>I want a riddle!</p>
+                <div id="riddle-content"> </div>
+            </div>
+            <div id="actions">
+                <h1>Actions</h1>
+                <button onclick="showMeme()">Show a Meme</button>
+                <button onclick="showJoke()">Tell Me a Joke</button>
+                <button onclick="showQuote()">Random Quote</button>
+                <button onclick="showRiddle()">Riddle me</button>
+                <button onclick="revealAnswers()" id="riddle-answer-btn">Reveal Riddle Answer</button>
+                <button onclick="clearAll()" id="refresh-btn">Refresh</button>
+            </div>
+        </div>
+    </body>
+</html>

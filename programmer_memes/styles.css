@@ -1,0 +1,64 @@
+/*  colors
+    darkgrey(background) - #222222
+    grey(button hover) - #333333
+    tan(text) - #D4AA7D
+    lightgrey(secondary text) - #828A9B
+*/
+
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: #222222;
+    color: #D4AA7D;
+}
+
+img {
+    width: 400px;
+}
+
+button {
+    font-family: inherit;
+    display: block;
+    margin: 16px 0;
+    font-size: 14px;
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid #D4AA7D;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+#riddle-answer-btn {
+    border: none;
+    text-decoration: underline;
+}
+
+#refresh-btn {
+    margin: 175px 0 21.44px 0;
+}
+
+#content {
+    display: flex;
+    margin-top: 50px;
+}
+
+#output {
+    margin-left: 50px;
+    width: 950px;
+    height: 600px;
+    border-right: 1px solid #404040;
+    font-size: 18px;
+}
+
+.paragraph {
+    margin: 16px 0;
+}
+
+#actions {
+    margin-left: 50px;
+    height: 600px;
+}

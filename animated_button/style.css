@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ball {
+    /* display: none; */
+    border: none;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    
+
+    animation-duration: 1s;
+    animation-name: enlarge;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-iteration-count: 0;
+    /* animation-fill-mode: forwards; */
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+    border: none;
+    overflow: clip;
+    background-color: rgb(255, 119, 0);
+}
+
+#text {
+    position: relative;
+    flex-shrink: 0;
+}
+
+@keyframes enlarge {
+    100% {
+        transform: scale(45);
+    }
+}

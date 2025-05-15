@@ -9,7 +9,7 @@ function main() {
 
     // if screen smaller than 700px make background pic size bigger
     const scaleHighest = screenWidth > 700 ? 150 : 180;
-    const scaleLowest = 100;
+    const scaleLowest = 120;
     const scaleRange = scaleHighest - scaleLowest;
     scaleBackgoundImg(scaleHighest); 
 

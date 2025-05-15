@@ -16,7 +16,7 @@ body {
     background-color: red;
     transform: translate(-50%, -50%);
 
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.2s, height 0.2s;
 }
 
 #btn {
@@ -32,8 +32,8 @@ body {
 
 #btn:hover {
     #ball {
-        width: 250px;
-        height: 250px;
+        width: 440px;
+        height: 440px;
     }
 }
 

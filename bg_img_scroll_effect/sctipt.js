@@ -11,25 +11,20 @@ function main() {
     const scaleHighest = screenWidth > 700 ? 150 : 180;
     const scaleLowest = 120;
     const scaleRange = scaleHighest - scaleLowest;
-    scaleBackgoundImg(scaleHighest); 
+    updateImage(scaleHighest, 1); 
 
     window.addEventListener('scroll', event => {
-        const distanceTop = contentDiv.getBoundingClientRect().top;
-        console.log(distanceTop, vh);
-        // pecrcent of the element visible * range we work with(0.2 = 0 - 0.2, 1 = 0 - 1) + baseline(end point)
-        scaleBackgoundImg((distanceTop/vh) * scaleRange + scaleLowest);
-        changeOpacity(distanceTop/vh);
+        //distance from the top of the browser to the top of content div
+        const distanceTop = contentDiv.getBoundingClientRect().top; 
+        // pecrcent of the element visible * range we work with(0.2 = 0 - 0.2, 1 = 0 - 1) + lowest point 
+        updateImage((distanceTop/vh) * scaleRange + scaleLowest, distanceTop/vh);
     })
 }
 
-function scaleBackgoundImg(value) {
+function updateImage(scale, opacity) {
     const backgroundImg = document.querySelector('#background-img');
-    backgroundImg.style.backgroundSize = value + '%';
-}
-
-function changeOpacity(value) {
-    const backgroundImg = document.querySelector('#background-img');
-    backgroundImg.style.opacity = `${value}`; 
+    backgroundImg.style.backgroundSize = scale + '%';
+    backgroundImg.style.opacity = `${opacity}`; 
 }
 
 main();
